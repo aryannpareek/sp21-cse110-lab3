@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang=”en”>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300&family=Work+Sans:wght@100&display=swap" rel="stylesheet">
+        <title>Aryan Pareek's User Page</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>Aryan Pareek's User Page</h1>
+            <nav>
+             <ul>
+               <li><a href="#one">Day 1 Journal</a></li>
+               <li><a href="#two">Day 2 Journal</a></li>
+               <li><a href="#three">Day 3 Journal</a></li>
+               <li><a href="#form">Survey Form</a></li>
+             <ul>
+            </nav>
+        </header>
+        <hr>
+        <main>
+            <section>
+                <h2><a name="one">Day <span style="color:red">One</span> Journal</a></h2>
+                    <h3>Date: 4/7/21</h3>
+                    <p>Today, I was going through old photos and came across pictures of my trip to <b>Sedona, Arizona</b> with some friends. I've attached one of my favorite photos from this trip at the bottom of this journal entry. Here's a <strong>list of other places I want to travel to:</strong><p>
+                    <ol>
+                        <li>Spain</li>
+                        <li>Australia</li>
+                        <li>Bali</li> 
+                    </ol>
+                    <div>
+                        <img src="sedona.jpg" width="640" height="480">
+                        <details>
+                            <summary>Cathedral Rock</summary>
+                            <p>Cathedral Rock is a tough, but rewarding hike in Sedona. My friends and I got this cool drone shot in front of the rock formation!</p>
+                        </details>
+                    </div>
+                <h2><a name="two">Day <span style="color:blue">Two</span> Journal</a></h2>
+                    <h3>Date: 4/8/21</h3>
+                    <p>Today my friend and I went skydiving. It was NUTS! I've attached the video my friend made highlighting our experience below. My instructor was explaining to me that skydivers use a special instrument called an <i>altimeter</i> which they attatch to their wrist. The instrument measures altitude and lets skydivers know when to deploy their parachute. I can't wait to get my solo license in the near future. <em>#FULLSEND</em><p>
+                    <div>
+                        <video width="640" height="480" src="skydive.mov" controls>
+                        </video>
+                    </div>
+                <h2><a name="three">Day <span style="color:green">Three</span> Journal</a></h2>
+                    <h3>Date: 4/9/21</h3>
+                    <p>
+                        Nothing much occured today. But I found this somewhat cool poem:<br>
+                        An old silent pond<br>
+                        A frog jumps into the pond—<br>
+                        Splash! Silence again.<br>
+                        I've also attached an audio clip of me reciting this poem for your entertainment.
+                    <p>
+                    <div>
+                        <audio controls src="poem.m4a">
+                        </audio>
+                    </div>
+            </section>
+        </main>
+        <hr>
+        <section>
+            <h2><a name="form">Final Survey</a></h2>
+            <form>
+                <fieldset>
+                    <legend>Survey:</legend>
+                    <label>Name:</label><br>
+                    <input type="text"><br>
+                    <label>Gender:</label><br>
+                    <input type="radio">
+                    <label>Male</label>
+                    <input type="radio">
+                    <label>Female</label>
+                    <input type="radio">
+                    <label>Other</label><br>
+      
+                    <input type="checkbox">
+                    <label>Select if you want an A in CSE 110</label><br>
+                    <input type="date">
+                    <label>What's today's date?</label><br>
+                    <input type="color">
+                    <label>What's your favorite color?</label><br>
+                    <input type="range">
+                    <label>How excited are you to return to in-person college?</label><br>
+                    <input type="number">
+                    <label>What's your shoe size (rounded up)?</label><br>
+                    <label>What's your favorite sport?</label><br>
+                    <input list="sports">
+                    <datalist id="sports">
+                        <option value="Football">
+                        <option value="Tennis">
+                        <option value="Basketball">
+                        <option value="Soccer">
+                        <option value="Volleyball">
+                    </datalist><br>
+      
+                    <label>Choose a Travel Destination:</label>
+                    <select>
+                        <optgroup label="Popular">
+                            <option>Dubai</option>
+                            <option>Honolulu</option>
+                            <option>Paris</option>
+                        </optgroup>
+                        <optgroup label="Other">
+                            <option>Madrid</option>
+                            <option>Reykjavik</option>
+                            <option>Melbourne</option>
+                        </optgroup>
+                    </select>
+                    <br>
+                    <button type="button">Submit</button><br>
+                    <textarea>Thanks for participating! I think you had some interesting responses.</textarea>
+                </fieldset>
+            </form>
+        </section>
+        <hr>
+        <footer>
+            <p>Thanks for visiting! Check out my actual website <a href="https://www.aryanpareek.com">here</a></p>
+            <!--<iframe src="https://www.aryanpareek.com"></iframe>-->
+        </footer>
+    </body>
+</html>
