@@ -1,1 +1,1 @@
-https://aryannpareek.github.io/Lab2/
+https://aryannpareek.github.io/sp21-cse110-lab3/
