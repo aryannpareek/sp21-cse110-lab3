@@ -3,7 +3,14 @@
     <head>
         <meta name="language" content="en">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300&family=Work+Sans:wght@100&display=swap" rel="stylesheet">
+        <style>
+            h1 {
+              position: fixed;
+              left: 85%;
+            }
+        </style>
         <title>Aryan Pareek's User Page</title>
     </head>
 
@@ -11,12 +18,12 @@
         <header>
             <h1>Aryan Pareek's User Page</h1>
             <nav>
-                <ul>
+                <ol>
                     <li><a href="#one">Day 1 Journal</a></li>
                     <li><a href="#two">Day 2 Journal</a></li>
                     <li><a href="#three">Day 3 Journal</a></li>
                     <li><a href="#form">Survey Form</a></li>
-                </ul>
+                </ol>
             </nav>
         </header>
         <hr>
@@ -24,26 +31,82 @@
             <section>
                 <h2><a name="one">Day <span style="color:red">One</span> Journal</a></h2>
                     <h3>Date: 4/7/21</h3>
-                    <p>Today, I was going through old photos and came across pictures of my trip to <b>Sedona, Arizona</b> with some friends. I've attached one of my favorite photos from this trip at the bottom of this journal entry. Here's a <strong>list of other places I want to travel to:</strong><p>
-                    <ol>
-                        <li>Spain</li>
-                        <li>Australia</li>
-                        <li>Bali</li> 
-                    </ol>
+                    <p style="font-size: 1cm;">Today, I was going through old photos and came across pictures of my trip to <b>Sedona, Arizona</b> with some friends. I've attached one of my favorite photos from this trip at the bottom of this journal entry. Here's a <strong>list of other places I want to travel to</strong>!<p>
+
+                    <div id="travel">
+                        <h3>-- Five year travel goal --</h3>
+                        <ul>
+                            <li>Spain</li>
+                            <li>Australia</li>
+                            <li>Bali</li> 
+                        </ul>
+                    </div>
+                    <p>This travel list will be complete one day!</p>
                     <div>
                         <img src="sedona.jpg" alt="sedona" width="640" height="480">
-                        <details>
+                        <figcaption style="font-size: 2vw;">Image 1 - Sunrise Drone Shot</figcaption>
+                        <details class="cathedral">
                             <summary>Cathedral Rock</summary>
                             <p>Cathedral Rock is a tough, but rewarding hike in Sedona. My friends and I got this cool drone shot in front of the rock formation!</p>
                         </details>
                     </div>
+                    
+                    <div class="bucketlist">
+                        <h3>Some stuff on my bucket list:</h3>
+                        <ol>
+                          <li>African Safari</li>
+                          <li>Bungee Jump</li>
+                          <li>Start a successful software business</li>
+                        </ol>
+                        <p>I'll accomplish these things soon</p>
+                        <span id="bitcoin" style="font-size: 2pc;">Bitcoin to the moon!</span>
+                        <span style="font-size: 30pt;">Trust...</span>
+                      </div>
+
                 <h2><a name="two">Day <span style="color:blue">Two</span> Journal</a></h2>
                     <h3>Date: 4/8/21</h3>
                     <p>Today my friend and I went skydiving. It was NUTS! I've attached the video my friend made highlighting our experience below. My instructor was explaining to me that skydivers use a special instrument called an <i>altimeter</i> which they attatch to their wrist. The instrument measures altitude and lets skydivers know when to deploy their parachute. I can't wait to get my solo license in the near future. <em>#FULLSEND</em><p>
                     <div>
                         <video width="640" height="480" src="skydive.mov" controls>
                         </video>
+                        <p><a href="https://www.youtube.com/watch?v=Fhskvloj1gE" target="_blank">
+                            One of my favorite skydiving videos</a></p>
                     </div>
+
+                    <div id="schedule">
+                        <table>
+                          <caption>My Course Schedule</caption>
+                          <colgroup>
+                              <col span="3">
+                          </colgroup>
+                          <tr>
+                            <th>Class</th>
+                            <th>Professor</th> 
+                            <th>Time</th>
+                          </tr>
+                          <tr>
+                            <td>CSE 110</td>
+                            <td>Powell</td>
+                            <td>TuTh</td>
+                          </tr>
+                          <tr>
+                            <td>CSE 101</td>
+                            <td>Dasgupta</td>
+                            <td>TuTh</td>
+                          </tr>
+                          <tr>
+                            <td>MATH 183</td>
+                            <td>Ciotti</td>
+                            <td>MWF</td>
+                          </tr>
+                          <tr>
+                              <td>PHIL 15</td>
+                              <td>Fulkerson</td>
+                              <td>TuTh</td>
+                            </tr>
+                        </table>
+                      </div>
+
                 <h2><a name="three">Day <span style="color:green">Three</span> Journal</a></h2>
                     <h3>Date: 4/9/21</h3>
                     <p>
@@ -60,7 +123,7 @@
             </section>
         </main>
         <hr>
-        <section>
+        <section class="form">
             <h2><a name="form">Final Survey</a></h2>
             <form>
                 <fieldset>
@@ -114,10 +177,26 @@
                 </fieldset>
             </form>
         </section>
+        <button type="button" style="font-size: 2em;">Click me if you're hyped for summer!</button>
         <hr>
+
+        <div class="flexbox">
+            <div><p>Flex Item 1</p></div>
+            <div><p>Flex Item 2</p></div>
+            <div><p>Flex Item 3</p></div>
+            <div><p>Flex Item 4</p></div>
+          </div>
+    
+          <div id="gridbox">
+            <div id="first">Grid Item 1</div>
+            <div id="second">Grid Item 2</div>
+            <div id="third">Grid Item 3</div>
+            <div id="fourth">Grid Item 4</div>
+          </div>
+
         <footer>
             <p>Thanks for visiting! Check out my actual website <a href="https://www.aryanpareek.com">here</a></p>
-            <!--<iframe src="https://www.aryanpareek.com"></iframe>-->
+            <iframe src="https://www.aryanpareek.com" width="1000" height="480"></iframe>
         </footer>
     </body>
 </html>
